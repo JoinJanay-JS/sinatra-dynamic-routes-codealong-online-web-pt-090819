@@ -21,9 +21,9 @@ class App < Sinatra::Base
     "#{@num1 * @num2}"
   end
   
-  get "/goodbye/:name" do
+  get '/goodbye/:name' do
     @user_name = params[:name]
-    "Goodbye #{@user_name}!"
+    "Goodbye, #{@user_name}."
   end
 
 
